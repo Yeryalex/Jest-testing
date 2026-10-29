@@ -7,6 +7,4 @@ function capitalize(string) {
     return result;
 }
 
-console.log(capitalize(NaN))
-
 export  { capitalize };
