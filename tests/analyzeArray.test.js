@@ -1,4 +1,4 @@
-import { analizeArray } from "./analyzeArray.js";
+import { analizeArray } from "../src/analyzeArray.js";
 
 describe("Analize Array", () => {
   test("Returns an object with the specific keys", () => {

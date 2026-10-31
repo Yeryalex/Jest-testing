@@ -1,4 +1,4 @@
-import { calculator } from "./calculator.js";
+import { calculator } from "../src/calculator.js";
 
 describe("Sum Calculator", () => {
   test("Sum two numbers (1)", () => {
