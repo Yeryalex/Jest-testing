@@ -4,7 +4,7 @@ A hands-on repository dedicated to learning and applying automated unit testing 
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project focuses on writing clean, modular, and maintainable unit tests using **Jest**. The primary objectives are:
 
@@ -15,7 +15,7 @@ This project focuses on writing clean, modular, and maintainable unit tests usin
 
 ---
 
-## 🚀 Projects & Exercises
+## Projects & Exercises
 
 Following the TOP Testing JavaScript assignment path, this repository contains implementations and full test suites for:
 
