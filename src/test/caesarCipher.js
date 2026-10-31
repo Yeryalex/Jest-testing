@@ -12,8 +12,11 @@ function caesarCipher(message, shift) {
 
   message.split("").forEach((element) => {
     if (isLetter(element)) {
-      const indexPos = alphabet.indexOf(element);
-      cipheredMessage.push(shiftedAlphabet[indexPos]);
+      const indexPos = alphabet.indexOf(element.toLowerCase());
+
+      element === element.toUpperCase()
+        ? cipheredMessage.push(shiftedAlphabet[indexPos].toUpperCase())
+        : cipheredMessage.push(shiftedAlphabet[indexPos]);
     } else {
       cipheredMessage.push(element);
     }
@@ -22,6 +25,6 @@ function caesarCipher(message, shift) {
   console.log(cipheredMessage.join(""));
 }
 
-caesarCipher("hello, world!", 3);
+caesarCipher("abcdefghijklmnopqrstuvwxyz", 3);
 
 export { caesarCipher };
