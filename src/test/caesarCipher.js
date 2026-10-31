@@ -3,6 +3,10 @@ function isLetter(char) {
 }
 
 function caesarCipher(message, shift) {
+  if (shift > 26) {
+    shift = shift - 26;
+  }
+
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   const slicedPortion = alphabet.slice(0, shift);
   const cipheredMessage = [];
@@ -22,9 +26,9 @@ function caesarCipher(message, shift) {
     }
   });
 
-  console.log(cipheredMessage.join(""));
+  return cipheredMessage.join("");
 }
 
-caesarCipher("abcdefghijklmnopqrstuvwxyz", 3);
+// console.log(caesarCipher("abc", 3));
 
 export { caesarCipher };
