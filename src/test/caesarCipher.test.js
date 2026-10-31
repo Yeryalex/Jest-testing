@@ -24,3 +24,15 @@ describe("Caesar shift value out of range", () => {
     expect(caesarCipher("abc", -3)).toBe("xyz");
   });
 });
+
+describe("Caesar strings different ASCII chars", () => {
+  test("Uppercase letters", () => {
+    expect(caesarCipher("ABC", 27)).toBe("BCD");
+    expect(caesarCipher("XYZ", 29)).toBe("ABC");
+    expect(caesarCipher("ABC", 3)).toBe("DEF");
+    expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
+  });
+  test("No letters chars", () => {
+    expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+  });
+});
